@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClauseHarbor · 保险产品条款审核交付台</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <svg class="brand-mark" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2 3.5 5.5v6c0 5 3.6 8.4 8.5 10.5 4.9-2.1 8.5-5.5 8.5-10.5v6L12 2Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M8.5 12.2 11 14.7l4.6-5.2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div>
+      <div class="brand-name">ClauseHarbor</div>
+      <div class="brand-sub">保险产品条款审核交付台</div>
+    </div>
+  </div>
+  <nav class="tabs" id="tabs">
+    <button class="tab" data-view="overview">总览</button>
+    <button class="tab" data-view="clauses">条款库</button>
+    <button class="tab" data-view="definitions">定义与引用</button>
+    <button class="tab" data-view="products">产品与地区</button>
+    <button class="tab" data-view="rounds">评审轮次</button>
+    <button class="tab" data-view="release">发布与隔离</button>
+  </nav>
+  <div class="top-actions">
+    <button class="btn ghost" id="btn-export" title="导出工作台 JSON 备份">导出备份</button>
+    <label class="btn ghost file-btn" title="从备份恢复">导入备份<input type="file" id="file-import" accept="application/json,.json" hidden></label>
+    <button class="btn ghost danger-ghost" id="btn-reset" title="清空并重新载入演示数据">重置演示</button>
+    <button class="btn ghost" id="btn-theme" title="切换深浅色">◐</button>
+  </div>
+</header>
+
+<div id="recovery-banner" class="recovery-banner" hidden></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<main id="main" class="main"></main>
+
+<footer class="footer">
+  <span>ClauseHarbor · 条款版本 · 评审轮次 · 发布回执 全部保存在本机浏览器</span>
+  <span id="save-indicator" class="save-indicator"></span>
+</footer>
+
+<script src="js/engine.js"></script>
+<script src="js/store.js"></script>
+<script src="js/seed.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "clauseharbor",
+  "version": "1.0.0",
+  "description": "ClauseHarbor · 保险产品条款审核交付台：条款版本谱系、按轮次的地区评审、冲突检测、发布包与隔离区",
+  "private": true,
+  "scripts": {
+    "start": "node server.js 8080",
+    "test": "node --test test/engine.test.js test/store.test.js",
+    "test:dom": "node --test test/dom.smoke.test.js",
+    "test:all": "node --test test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hejinhui2018/task-new181.git"
+  },
+  "keywords": ["insurance", "clause", "review", "workflow"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdom": "^30.1.1"
+  }
+}
