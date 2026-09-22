@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClauseHarbor · 保险产品条款审核交付台</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-mark">⚓</div>
+      <div>
+        <div class="brand-name">ClauseHarbor</div>
+        <div class="brand-sub">条款审核交付台</div>
+      </div>
+    </div>
+    <nav id="nav"></nav>
+    <div class="side-foot">
+      <div id="roundPill" class="round-pill"></div>
+    </div>
+  </aside>
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 id="viewTitle">总览</h1>
+        <div id="viewSub" class="view-sub"></div>
+      </div>
+      <div class="top-actions">
+        <button class="btn ghost" id="btnSeed" title="载入一套两轮评审的演示数据">载入演示数据</button>
+        <button class="btn ghost" id="btnRefresh">刷新</button>
+      </div>
+    </header>
+    <section id="content" class="content"></section>
+  </main>
+</div>
+<div id="modalRoot"></div>
+<div id="toastRoot" class="toast-root"></div>
+<script src="/app.js"></script>
+</body>
+</html>
